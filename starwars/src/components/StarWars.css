@@ -3,24 +3,80 @@ h1 {
   font-size: 40px;
 }
 
+p {
+  text-align: left; 
+}
+
+ul {
+  list-style-type: none;  
+  overflow: auto;
+}
+
+li {  
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+  transition: all 0.5s ease;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li:hover {
+  color: darkgreen;
+  cursor: pointer;
+}
+
+li.active {
+  font-weight: bold;
+  color: #333;
+}
+
 .characterProfiles {
   display: flex;
-  max-width: 1000px;
+  justify-content: center;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
 }
 
 .humanProfiles {
+  width: 40%;
 }
 
 .human {
   margin: 50px;
   padding: 20px;
   background-color: lightgoldenrodyellow;
+  border-radius: 30px;
+}
+
+.human h1 {
+  color: darkblue;
+}
+
+.human:hover {
+  box-shadow: 5px 10px #888888;
+}
+
+.droidProfiles {
+  width: 40%;
 }
 
 .droid {
   margin: 50px;
   padding: 20px;
   background-color: lightblue;
+  border-radius: 30px 0;
+}
+
+.droid h1 {
+  color: darkslategray;
+}
+
+.droid:hover {
+  box-shadow: 5px 10px #888888;
 }
